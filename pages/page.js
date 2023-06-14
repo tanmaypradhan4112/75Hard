@@ -46,3 +46,22 @@ left7.addEventListener('click',function(){
     exitBtn.style.display='block';
 })
 
+
+
+// Welcome page
+const box1 = document.getElementById('boxContent1');
+// const box2 = document.getElementById('boxContent2');
+// const box3 = document.getElementById('boxContent3');
+// const box4 = document.getElementById('boxContent4');
+// const box5 = document.getElementById('boxContent5');
+// const box6 = document.getElementById('boxContent6');
+
+const contentBox = document.getElementById('animateBox1');
+
+
+contentBox.addEventListener('click',function(){
+    box1.style.display='block';
+})
+
+  
+

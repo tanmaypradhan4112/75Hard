@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>75 HARD | Welcome</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
+
 <body>
     <div class='container'>
         <div class='title'>
@@ -19,18 +22,79 @@
         </div>
 
         <div id="welcomeContent">
-            <p>75 HARD is the only program that can permanently change your life ... from your way of thinking, to the level of discipline you approach every single task in front of you with.</p>
+            <p>75 HARD is the only program that can permanently change your life ... from your way of thinking, to the
+                level of discipline you approach every single task in front of you with.</p>
             <br>
             <p id="Contentsubline">This is about mental toughness.</p>
         </div>
 
         <div class="welcomeAnimate">
+            <div id="imageBlock"></div>
             <div id="animateImage">
                 <img src="https://pngimg.com/uploads/brain/brain_PNG100.png" alt="brain_PNG100">
             </div>
         </div>
 
+        <div class="animateBlock">
+            <div class="box" id="animateBox1">
+                <p id="boxContent1">Confidence</p>
+            </div>
+
+            <div class="box" id="animateBox2">
+                <p id="boxContent2">Self-Esteem</p>
+            </div>
+
+            <div class="box" id="animateBox3">
+                <p id="boxContent3">Self-Worth</p>
+            </div>
+
+            <div class="box" id="animateBox4">
+                <p id="boxContent4">Self-Belief</p>
+            </div>
+
+            <div class="box" id="animateBox5">
+                <p id="boxContent5">Fortitude</p>
+            </div>
+
+            <div class="box" id="animateBox6">
+                <p id="boxContent6">Grittiness</p>
+            </div>
+        </div>
     </div>
-    
+
+    <div class="endContainer">
+        <div class="endHeading">
+            <p>REAL PEOPLE ARE CHANGING THEIR ENTIRE OUTLOOK ON LIFE THROUGH 75 HARD</p>
+        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_29/1751446/211330970_338903987739091_9087822884872388159_n.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i0.wp.com/imperfecttaylor.com/wp-content/uploads/2023/04/75-HARD-before-and-after.png?resize=1024%2C597&ssl=1" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://townsquare.media/site/182/files/2021/04/Krystal-Montez-70.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DsY-d_1BeE2CJ7x0a9KI0Da54mGevfpvSQ&usqp=CAU" alt="">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
+<script src="welcome.js"></script>
+
 </html>

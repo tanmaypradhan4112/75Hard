@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -193,16 +194,16 @@ a {
     margin-bottom: 10px;
     color: beige;
     font-size: 20px;
-    animation: fadeOut1 10s ;
+    animation: fadeOut1 10s;
 }
 
 .fadeoutText2 {
     color: beige;
     font-size: 20px;
-    animation: fadeOut2 10s ;
+    animation: fadeOut2 10s;
 }
 
-.contiuneBtn button{
+.contiuneBtn button {
     margin: auto;
     background-color: antiquewhite;
     margin-top: 20px;
@@ -217,8 +218,8 @@ a {
     transition: 2s;
 }
 
-.contiuneBtn button:hover{
-    color:whitesmoke;
+.contiuneBtn button:hover {
+    color: whitesmoke;
     background-color: red;
     box-shadow: 0 0 5px red;
     cursor: pointer;
@@ -226,69 +227,80 @@ a {
 
 
 @keyframes fadeoutBtn {
-    0%{
+    0% {
         opacity: 0;
     }
 
-    70%{
+    70% {
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 1;
     }
-    
+
 }
 
-@keyframes fadeOut1{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut2{
-    0%{
+@keyframes fadeOut1 {
+    from {
         opacity: 0;
     }
 
-    50%{
-        opacity: 0;
-    }
-
-    100%{
+    to {
         opacity: 1;
     }
 }
 
+@keyframes fadeOut2 {
+    0% {
+        opacity: 0;
+    }
 
-@keyframes animated-text{
-    from{width: 0;}
-    to{width: 100%;}
-  }
-  
-  /* cursor animations */
-  @keyframes animated-cursor{
-    from{border-right-color: rgba(255, 255, 255, 0.75);}
-    to{border-right-color: transparent;}
-  }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* cursor animations */
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
 
 
 /* Quote Container */
-.quoteContainer{
+.quoteContainer {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     box-shadow: 0 0 10px;
-   background-color: #070707;
+    background-color: #070707;
 }
 
-.quote p{
-    color:whitesmoke;
+.quote p {
+    color: whitesmoke;
     font-weight: 600;
     font-size: 20px;
     border-right: solid 3px rgba(255, 255, 255, 0.75);
@@ -298,36 +310,37 @@ a {
     animation-delay: 11s;
 }
 
-.scrollText p{
+.scrollText p {
     margin-top: 20px;
-    color:whitesmoke;
+    color: whitesmoke;
     font-size: 20px;
     font-weight: 600;
-    
+
     animation: fadeOut1 5s;
     animation-delay: 11s;
 }
+
 /* Animate Container */
-.animateContainer{
+.animateContainer {
     height: 100vh;
     text-align: center;
 }
 
-.animateContainer h2{
+.animateContainer h2 {
     padding-top: 50px;
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
-.slideAnimation{
+.slideAnimation {
     padding-top: 30px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     color: beige;
     font-size: 30px;
 }
 
-.animateContainer #slideSubHeading{
+.animateContainer #slideSubHeading {
     margin: 10px;
     color: red;
     font-weight: 600;
@@ -335,45 +348,45 @@ a {
     letter-spacing: 2px;
 }
 
-.slideAnimation ul{
+.slideAnimation ul {
     list-style: none;
 }
 
-.slideAnimation #leftContent{
+.slideAnimation #leftContent {
     text-transform: capitalize;
     letter-spacing: 2px;
     font-weight: 300;
     transition: 0.5s;
-    padding-right:40px ;
+    padding-right: 40px;
 }
 
-.slideAnimation #rightContent{
+.slideAnimation #rightContent {
     text-transform: uppercase;
     font-weight: 600;
     text-align: left;
 }
 
-.slideAnimation .left li{
+.slideAnimation .left li {
     cursor: pointer;
 }
 
-.slideAnimation .left li:hover{
+.slideAnimation .left li:hover {
     color: #696969;
 }
 
-.slideAnimation .right li{
+.slideAnimation .right li {
     display: none;
     animation: fadeOut1 2s;
 }
 
-.exitSection{
-    margin:50px ;
+.exitSection {
+    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.exitSection #exitQuote{
+.exitSection #exitQuote {
     background-color: beige;
     padding: 10px;
     font-size: 20px;
@@ -384,15 +397,15 @@ a {
     display: none;
 }
 
-.exitSection #exitQuote:hover{
+.exitSection #exitQuote:hover {
     box-shadow: 0 0 20px #696969;
-    background-color:#181717;
+    background-color: #181717;
     color: whitesmoke;
 }
 
 
 /* Welcome Page */
-.welcomeContainer{
+.welcomeContainer {
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -400,40 +413,108 @@ a {
     color: white;
 }
 
-.welcomeContainer #welcomeHeading{
+.welcomeContainer #welcomeHeading {
     font-size: 50px;
     font-weight: 600;
     color: red;
 }
 
-.welcomeContainer #welcomeContent{
+.welcomeContainer #welcomeContent {
     font-size: 20px;
 }
 
-.welcomeContainer #welcomeContent #Contentsubline{
+.welcomeContainer #welcomeContent #Contentsubline {
     font-size: 30px;
     opacity: 0.5;
-    color:white;
+    color: white;
 }
 
-.welcomeContainer .welcomeAnimate #animateImage img{
+.welcomeAnimate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeAnimate #imageBlock {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: aliceblue;
+    box-shadow: 0 0 90px white;
+    animation: bulb 3s infinite;
+}
+
+#animateImage img {
     width: 250px;
     margin-top: 30px;
-
-    animation: bulb 4s infinite;
+    display: block;
+    filter: blur(0.5px);
+    z-index: 1;
 }
 
 @keyframes bulb {
-    0%{
-        opacity: 0.7;
+    0% {
+        box-shadow: 0 0 20px white;
     }
-    50%{
-        opacity: 1;
-        filter: brightness(1);
+
+    50% {
+        box-shadow: 0 0 90px white;
     }
-    100%{
-        opacity: 0.7;
+
+    100% {
+        box-shadow: 0 0 20px white;
     }
-    
+
 }
 
+#animateImage img {
+    cursor: pointer;
+}
+
+.animateBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    margin-top: 20px;
+}
+
+.animateBlock .box{
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 6px 6px 2px rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+/* End Section */
+
+.endContainer{
+    margin: auto;
+    margin-top: 100px;
+    height:100vh;
+}
+.endHeading{
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+}
+
+.swiper{
+    width: 50%;
+    height: 400px;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
